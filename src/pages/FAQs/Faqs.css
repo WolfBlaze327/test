@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:wght@300,400,700&display=swap');
+
+
+
+main {
+  width: 100vw;   
+  overflow: hidden; 
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+.contact-container {
+  position: relative;
+  width: 100%;
+  min-height: 25vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact-container .header-content{
+  z-index: 888;
+  color: #fff;
+  margin-top: 50px;
+
+}
+.contact-container .header-content h1 {
+  font-size: 4em;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-shadow: 0 0.3rem 0.5rem #000;
+  text-align: start;
+}
+
+.contact-container img {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* contact form */
+
+.contact1{
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #000;
+  background-size: cover;
+}
+.contact1 .cont {
+  max-width: 800px;
+  text-align: center;
+}
+
+.contact1 .cont h2 {
+  font-size: 36px;
+  font-weight: bolder;
+  color: #18A0FB;
+}
+.contact1 .cont h1 {
+  font-size: 36px;
+  font-weight: bolder;
+  color: #18A0FB;
+}
+.contact1 .cont p {
+  font-weight: 300;
+  color: #fff;
+}
+.container-contact1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.container-contact1 .contactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.container-contact1 .contactInfo .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+.container-contact1 .contactInfo .box .icon {
+  min-width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+
+.container-contact1 .contactInfo .box .text1 {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+
+.container-contact1 .contactInfo .box .text1 {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+  flex-direction: column;
+}
+.container-contact1 .contactInfo .box .text1 h3 {
+  font-weight: 900;
+  color: #18A0FB;
+}
+.container-contact1 .contactInfo .box .text1 p {
+  color: #fff;
+  font-weight: 600;
+}
+
+.contactForm {
+  width: 40%;
+  padding: 40px;
+  background: #fff;
+}
+
+.contactForm h2 {
+   font-size: 30px;
+   color: #18A0FB;
+   font-weight: bolder;
+}
+
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #000;
+  resize: none;
+}
+.contactForm .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.3s;
+  color: #000;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+  color: #000;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"] {
+  width: 100px;
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.contactForm .inputBox input[type="submit"]:hover {
+  background: #18A0FB;
+  color: #000;
+}
+
+@media (max-width: 991px) {
+  .contact1
+  {
+    padding: 50px;
+  }
+  .container-contact1{
+    flex-direction: column;
+  }
+  .container-contact1 .contactInfo{
+    margin-bottom: 40px;
+  }
+  .container-contact1 .contactInfo,
+  .contactForm {
+    width: 100%;
+}
+}
+
+/* accordion */
+
+.fqs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  color: #18A0FB;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.faqs-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  background: #000;
+}
+
+.wrapper{
+  max-width: 100%;
+  padding: 0 20px;
+}
+.wrapper .parent-tab,
+.wrapper .child-tab{
+  margin-bottom: 8px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.18);
+}
+.wrapper .parent-tab label,
+.wrapper .child-tab label{
+  background: #18A0FB;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  z-index: 99;
+  transition: all 0.3s ease;
+}
+.wrapper .parent-tab label:hover{
+  background: #006fe6;
+}
+.parent-tab input:checked ~ label,
+.child-tab input:checked ~ label{
+  background: #006fe6;
+}
+.wrapper label span{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-shadow: 0 -1px 1px #0056b3;
+}
+.wrapper .child-tab label span{
+  font-size: 17px;
+}
+.parent-tab label .icon{
+  position: relative;
+  height: 30px;
+  width: 30px;
+  font-size: 15px;
+  color: #007bff;
+  display: block;
+  background: #000;
+  text-shadow: 0 -1px 1px #0056b3;
+}
+.wrapper .child-tab label .icon{
+  height: 27px;
+  width: 27px;
+}
+.parent-tab label .icon i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.parent-tab input:checked ~ label .icon i:before,
+.child-tab input:checked ~ label .icon i:before{
+  content: '\f068';
+}
+.wrapper .parent-tab .content,
+.wrapper .child-tab .sub-content{
+  max-height: 0px;
+  overflow: hidden;
+  background: #fff;
+  transition: all 0.4s ease;
+}
+.parent-tab input:checked ~ .content,
+.child-tab input:checked ~ .sub-content{
+  max-height: 100vh;
+}
+.tab-3 input:checked ~ .content{
+  padding: 15px 20px;
+}
+.parent-tab .content p,
+.child-tab .sub-content p{
+  padding: 15px 20px;
+  font-size: 16px;
+}
+.child-tab .sub-content p{
+  font-size: 15px;
+}
+input[type="radio"],
+input[type="checkbox"]{
+  display: none;
+}
+
+

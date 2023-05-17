@@ -1,0 +1,30 @@
+import React from "react";
+import Modal from "react-bootstrap/Modal";
+import Button from "react-bootstrap/Button";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
+
+function HomeModal(props) {
+  const { show, handleClose, modalTitle, modalContent } = props;
+
+  return (
+    <Modal show={show} onHide={handleClose} size="lg"
+    aria-labelledby="contained-modal-title-vcenter"
+    centered>
+      <Modal.Header closeButton>
+        <Modal.Title>{modalTitle}</Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <p>{modalContent}</p>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button variant="secondary" onClick={handleClose}>
+          Close
+        </Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
+
+export default HomeModal;
